@@ -97,7 +97,7 @@ header {
 :root {
     --swiper-navigation-size: 18px;
 }
-.bottum {
+.button {
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
@@ -106,15 +106,21 @@ header {
     padding: 30px 65px 26px 65px;
     margin-top: 36px;
     display: inline-block;
+    border: none;
    
 }
 .reviews {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+}
+.review-slider {
+    /*margin-top: 98px;*/
 }
 .review-slid {
     padding: 0px 60px 0px 60px;
+    margin-top: 98px;
 }
+
 .review-image {
     width: 220px;
     height: 220px;
@@ -139,6 +145,16 @@ position: absolute;
 .review-image-1 {
     background: #000 url(../img/reviewimg/folsrousf.jpg);
 }
+.review-image-2 {
+    background: #000 url(../img/reviewimg/pink_flower.jpg);
+
+}
+.review-image-3 {
+    background: #000 url(../img/reviewimg/springcomp.jpg);
+}
+.review-image-4 {
+    background: #000 url(../img/reviewimg/compwithLilu.jpg);
+}
 .review-name {
     margin-bottom: 7px;
 }
@@ -149,3 +165,161 @@ position: absolute;
 }.review-link { 
     color: #f24841;
 }
+.section-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3px;
+    
+}
+.swiper-button-prev:hover {
+    background-image: url(../img/arrows/arrowLeftHover.png);
+    background-repeat: no-repeat;
+
+}
+.swiper-button-next:hover {
+    background-image: url(../img/arrows/arrowRightHover.png);
+    background-repeat: no-repeat;
+
+}
+.advantages {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    border-bottom: 1px solid #4c4c4c;
+}
+.advantages-wrapper {
+    min-height: 85px;
+    margin-bottom: 30px;
+}
+.advantages-title {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4;
+    max-width: 270px;
+    margin: auto;
+
+}
+.goods {
+   padding-top: 100px;
+   padding-bottom: 100px;
+
+}
+.section-description {
+    font-size: 18px;
+    text-align: center;
+}
+.card {
+    text-align: center;
+    border: 3px solid #fff;
+    padding: 33px 35px 30px 35px;
+    margin-top: 27px;
+}
+.card-image {
+    width: 110px;
+    height: 110px;
+}
+.card-titel {
+    margin-top: 23px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.card-label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+.color-label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
+}
+.color-input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -9;
+}
+.color-label.white {
+    background-color: #fff;
+}
+.color-label.beige {
+    background-color: #f7b496;
+}
+.color-label.pink {
+    background-color: #ed366e;
+}
+.color-label.red {
+    background-color: #ff0000;
+}
+.color-label.blue {
+    background-color: #12129d;
+}
+.counter-input {
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: #292929;
+    margin: 0px 15px 0px 15px;
+}
+.counter-button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background-color: #292929;
+    border: none;
+}
+.card-button {
+    font-size: 14px;
+    width: 100%;
+    padding: 16px 10px 13px 10px;
+}
+.more {
+    font-size: 14px;
+    color: #f24841;
+    display: block;
+    text-align: center;
+    margin-top: 39px;
+    padding: 10px;
+}
+.more::after {
+    display: inline-block;
+    content: " ";
+    width: 10px;
+    height: 4px;
+    background: url('../img/caret.svg') no-repeat center;
+    margin-left: 14px;
+    vertical-align: middle;
+}
+.offer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #1a1a1a;
+    text-align: center;
+
+}
+.offer-link {
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 65px;
+}
+.offer-label {
+    display: block;
+    margin-bottom: 22px;
+    font-size: 14px;
+}
+.offer-phone {
+    font-size: 36px;
+    text-decoration: none;
+    color: #fff;
+}
+
