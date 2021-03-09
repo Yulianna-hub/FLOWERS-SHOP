@@ -29,7 +29,7 @@ body {
 header {
     padding-top: 50px;
 }
-.header-discription {
+.header-discription, .footer-discription {
     font-family: "Gotham Pro Light";
     letter-spacing: 0.12px;
     font-size: 12px;
@@ -38,19 +38,21 @@ header {
     color: #ff3469;
     font-family: 'Gotham Pro Medium';
 }
+.header-contacts {
+    text-align: right;
+}
 .header-phone {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    text-align: right;
+    /*text-align: right;*/
     display: block;
 }
 .header-info {
     font-weight: 400;
     font-size: 12px;
     margin-top: 7px;
-    text-align: right;
     display: block;
 }
 .callback {
@@ -58,7 +60,6 @@ header {
     font-size: 16px;
     margin-top: 16px;
     display: block;
-    text-align: right;
 }
 .hero {
     padding-top: 100px;
@@ -68,18 +69,23 @@ header {
 }
 .hero-title {
     font-size: 34px;
+    margin: auto;
     text-transform: uppercase;
     line-height: normal;
     margin-bottom: 34px;
     letter-spacing: 0.34px;
     font-family: "Gotham Pro Medium";
+    max-width: 692px;
+    
 }
 .hero-discription {
     font-size: 18px;
     font-family: "Gotham Pro Light";
     text-transform: uppercase;
     letter-spacing: 0.18px;
-
+    line-height: 1.4;
+    max-width: 598px;
+    margin: auto;
 }
 .hero-cta {
     font-family: "Gotham Pro Light";  
@@ -112,9 +118,6 @@ header {
 .reviews {
     padding-top: 100px;
     padding-bottom: 50px;
-}
-.review-slider {
-    /*margin-top: 98px;*/
 }
 .review-slid {
     padding: 0px 60px 0px 60px;
@@ -322,4 +325,95 @@ position: absolute;
     text-decoration: none;
     color: #fff;
 }
+.footer-menu {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    margin-bottom: 33px;
+}
+.footer-menu-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.footer-menu-item {
+    margin-right: 30px;
 
+}
+.social {
+    font-size: 16px;
+}
+.footer-label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.footer-inffo {
+    text-align: right;
+}
+.footer-phone {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.footer-basement {
+    height: 200px;
+    background-color: #ffffff;
+    color: black;
+    padding: 52px 0px 112px 0px;
+}
+.IslamovArt {
+    color: black;
+}
+.modal {
+    display: none;
+}
+.modal-title {
+    color: #292929;
+}
+.modal-button {
+    width: 100%;
+}
+.modal-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .header-contacts {
+        text-align: center;  
+    }
+    .hero {
+        padding-top: 50px;
+    }
+    .hero-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+    .hero-discription {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .button {
+        padding: 20px 40px 20px 40px;
+    }
+    .colors {
+        max-width: 200px;
+        margin: auto;
+    }
+    .card-label {
+        margin: 20px auto;
+        display: block;
+    }
+}
+@media (max-width: 576px) {
+    .footer-inffo {
+        text-align: left;
+    }
+}
