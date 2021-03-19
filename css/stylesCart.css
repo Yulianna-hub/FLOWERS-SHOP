@@ -1,5 +1,38 @@
 body {
     background-color: #292929;
+    color: #fff;
+    font-family: 'Gotham Pro Regular', sans-serif;
+    margin: 0px;
+}
+header {
+    padding-top: 50px;
+   margin-bottom: 30px;
+}
+.header-discription, .footer-discription {
+    font-family: "Gotham Pro Light";
+    letter-spacing: 0.12px;
+    font-size: 12px;
+}
+.text-color-red {
+    color: #ff3469;
+    font-family: 'Gotham Pro Medium';
+}
+.header-contacts {
+    text-align: right;
+}
+.header-phone {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    /*text-align: right;*/
+    display: block;
+}
+.callback {
+    color: #ff3469;
+    font-size: 16px;
+    margin-top: 16px;
+    display: block;
 }
 .modal-title {
     background-color: #292929;
@@ -15,6 +48,7 @@ body {
     color: #fff;
     font-size: 20px;
     font-family: "Gotham Pro Light";
+
 }
 
 .item-count {
@@ -56,7 +90,56 @@ body {
    
 }
 .texttoupc {
+    margin-top: 15px;
     text-transform: uppercase;
     font-family: 'Gotham Pro Regular', sans-serif;
     
+}
+.footercontent {
+    position: relative;
+    bottom:0px;
+    left:0px;
+    width: 100%;
+}
+.footer-basement {
+    margin: 70px 0px 0px 0px;
+    background-color: #ffffff;
+    color: black;
+    padding: 52px 0px 40px 0px;
+    
+}
+.IslamovArt {
+    color: black;
+}
+.modal-callb {
+    display: none;
+    background-color: #292929;
+    color: #fff;
+}
+.modal-tittle {
+    color:  #ff2e55;
+    background-color: #292929;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Gotham Pro Regular', sans-serif;
+}
+.modal-button {
+    width: 100%;
+    margin-top: 9px;
+    background-color: #ff2e55;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Gotham Pro Regular', sans-serif;
+    padding: 8px 13px 8px 13px;
+    color: #fff;
+    cursor: pointer;
+
+}
+.modal-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    background-color: #292929;
+    font-family: 'Gotham Pro Regular', sans-serif;
 }

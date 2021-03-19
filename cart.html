@@ -12,6 +12,31 @@
     <link rel="stylesheet" href="css/stylesCart.css">
 </head>
 <body id="cartstyles">
+  <header class="header">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-3 mb-3 mb-md-0">
+              <a href="/">
+                  <img src="img/logo.png" alt="Flowers" class="header-logo">
+              </a>
+              </div>
+              <!-- /.col-md-3 -->
+              <div class="col-lg-6 col-md-4 mb-3 mb-md-0">
+                  <span class="header-discription">
+                      Интернет-магазин<br/> цветов с доставкой<br/> по всей <span class="text-color-red"> России</span><br/>
+                  </span>
+              </div>
+              <!-- /.col-md-6 -->
+              <div class="col-lg-3 col-md-5 header-contacts">
+                  <a href="tel:+34 654-87-45" class="header-phone">+34 654-87-45</a>
+                  <span class="header-info">Звонок по России бесплатный</span>
+                  <a data-fancybox data-src="#modal" href="javascript:;" class="callback">Заказать звонок</a>
+              </div>
+              <!-- /.col-lg-3 -->
+          </div>
+      </div>
+      <!-- /.conteiner -->
+  </header>
      <!-- Modal cart -->
 <div class="container">
   <div class="stylesforcart">
@@ -28,7 +53,7 @@
           <div class="modal-body">
             <table class="show-cart table">
               
-            </table>
+            </table><hr>
             <div class="totalprice texttoupc">Total price: $<span class="total-cart"></span></div>
           </div>
           <div>
@@ -40,12 +65,44 @@
         </div>
       </div>
     </div>
-  </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="jsScript/main.js"></script> 
-    
+  </div>  
 </body>
+<footer class="footercontent">
+  <div class="footer-basement">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="/">
+                    <img src="img/Flowers_footer.png" alt="Flowers" class="header-logo">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <span class="footer-discription">
+                    Интернет-магазин<br/> цветов с доставкой<br/> по всей <span class="text-color-red"> России</span><br/>
+                </span>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-3">
+                <span class="footer-info">Разработка сайта:</span>
+                <a href="#" class="IslamovArt"> Islamov Art</a>
+            </div>
+        </div>
+
+    </div>
+</div> 
+</footer>
+  <!--callback modal-->
+  <div class="modal-callb" id="modal">
+    <h2 class="modal-tittle">Закажите обратный звонок</h2>
+        <form action="#">
+            <input type="tel" class="modal-input" placeholder="+34 (___) ___ __ __">
+            <button class="button modal-button">Перезвоните мне</button>
+        </form>
+
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="jsScript/main.js"></script> 
 </html>
