@@ -1,0 +1,62 @@
+body {
+    background-color: #292929;
+}
+.modal-title {
+    background-color: #292929;
+    color: #ff2e55;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Gotham Pro Regular', sans-serif;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+}
+.stylesforcart {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Gotham Pro Light";
+}
+
+.item-count {
+   margin-bottom: 6px; 
+}
+.totalprice {
+    margin: 5px 0px 15px 0px;
+}
+.clearordercl, .btn_del {
+    float: right;
+    background-color: #ff2e55;
+    margin-right: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Gotham Pro Regular', sans-serif;
+    padding: 6px 10px 6px 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.morlessdel {
+    background-color: #ff2e55;
+    margin-right: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Gotham Pro Regular', sans-serif;
+    padding: 6px 10px 6px 10px;
+    color: #fff;
+}
+.item-count {
+    text-transform: uppercase;
+    font-family: 'Gotham Pro Regular', sans-serif;
+    color: #fff;
+    background-color: #292929;
+    font-size: 14px;
+    margin: 0px 5px 3px 0px;
+}
+.carttitel {
+    text-decoration: none;
+   
+}
+.texttoupc {
+    text-transform: uppercase;
+    font-family: 'Gotham Pro Regular', sans-serif;
+    
+}
