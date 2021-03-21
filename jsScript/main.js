@@ -313,38 +313,34 @@ const flowersSlider = new Swiper('.flowers-slider', {
     // more goods
     const moreFlowers = document.querySelector('.moreflowers');
     const morreflower = document.getElementById('morreflower');
-    console.log(morreflower);
 
-     const rowMoreFlowers = () => {
-         moreFlowers.style.display = ' flex';
-        
-      };
+    const rowMoreFlowers = () => {
+         moreFlowers.style.display = ' flex';   
+    };
     morreflower.addEventListener('click', rowMoreFlowers);
 
-    //   // counter -+
-    //   const counterGroup = document.querySelector('.counter-group');
-    //   const counterInput = document.querySelector('.counter-input');
-    //   const counterButtoNLess  = document.querySelector('.counter-button_less');
-    //   const counterButtoNMore  = document.querySelector('.counter-button_more');
-    //   console.log(counterInput);
-    //   const countRes = (event) => {
-    //     let target = event.target;
-    //     let counter = +counterInput.value;
-    //     console.log(counter);
-    //     if (target.classList.contains('counter-button_less')) {
-    //       counter -= 1;
-    //       counter = counter < 0 ? 0 : counter;
-    //     } else if (target.classList.contains('counter-button_more')) {
-    //       counter += 1;
-          
-    //     }
-    //     counterInput.value = counter;
-    //     console.log(counter);
-        
-    //   };
+     // counter -+
+     const counterGroups = document.querySelectorAll('.counter-group');
+     for (let counterGroup in counterGroups) {
 
-    //counterButtoNLess.addEventListener('click', countRes);
-    //counterButtoNMore.addEventListener('click', countRes);
+      let counterGroupp = counterGroups[counterGroup];
+      console.log(counterGroupp);
+      const counterInput = counterGroupp.querySelector('.counter-input');
+      //const counterButtoNLess  = counterGroupp.querySelector('.counter-button_less');
+      //const counterButtoNMore  = counterGroupp.querySelector('.counter-button_more');
+      counterGroupp.addEventListener('click', (event) => {
+          let target = event.target;
+          let counter = +counterInput.value;
+          if (target.classList.contains('counter-button_less')) {
+            counter -= 1;
+            counter = counter < 0 ? 0 : counter;
+          } else if (target.classList.contains('counter-button_more')) {
+            counter += 1;
+            
+          }
+          counterInput.value = counter;
+      })
+    }
 
 });
 
