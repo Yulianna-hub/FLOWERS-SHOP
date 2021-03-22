@@ -315,9 +315,11 @@ const flowersSlider = new Swiper('.flowers-slider', {
     const morreflower = document.getElementById('morreflower');
 
     const rowMoreFlowers = () => {
-         moreFlowers.style.display = ' flex';   
+         moreFlowers.style.display = ' flex';      
     };
-    morreflower.addEventListener('click', rowMoreFlowers);
+    if (!!moreFlowers) {
+       morreflower.addEventListener('click', rowMoreFlowers);
+   };
 
      // counter -+
      const counterLM = () => {
