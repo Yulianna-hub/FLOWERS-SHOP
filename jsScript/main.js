@@ -320,29 +320,28 @@ const flowersSlider = new Swiper('.flowers-slider', {
     morreflower.addEventListener('click', rowMoreFlowers);
 
      // counter -+
-     const counterGroups = document.querySelectorAll('.counter-group');
-     for (let counterGroup in counterGroups) {
+     const counterLM = () => {
+        const counterGroups = document.querySelectorAll('.counter-group');
+          counterGroups.forEach(element => {
+          const counterInput = element.querySelector('.counter-input');
+          element.addEventListener('click', (event) => {
+              let target = event.target;
+              let counter = +counterInput.value;
+              if (target.classList.contains('counter-button_less')) {
+                counter -= 1;
+                counter = counter < 0 ? 0 : counter;
+              } else if (target.classList.contains('counter-button_more')) {
+                counter += 1;
+                
+              }
+              counterInput.value = counter;
+          });
 
-      let counterGroupp = counterGroups[counterGroup];
-      console.log(counterGroupp);
-      const counterInput = counterGroupp.querySelector('.counter-input');
-      //const counterButtoNLess  = counterGroupp.querySelector('.counter-button_less');
-      //const counterButtoNMore  = counterGroupp.querySelector('.counter-button_more');
-      counterGroupp.addEventListener('click', (event) => {
-          let target = event.target;
-          let counter = +counterInput.value;
-          if (target.classList.contains('counter-button_less')) {
-            counter -= 1;
-            counter = counter < 0 ? 0 : counter;
-          } else if (target.classList.contains('counter-button_more')) {
-            counter += 1;
-            
-          }
-          counterInput.value = counter;
-      })
-    }
-
+        });
+     }
+     counterLM();
 });
+
 
 
 
